@@ -17,10 +17,19 @@ function storeData() {
         Email: inputEmail,
         Passcode: inputPass
     })
+    
         .then(function (docRef) {
             console.log("Document written with ID: ", docRef.id);
         })
         .catch(function (error) {
             console.error("Error adding document: ", error);
         });
+
+    alert("You have successfully created a CheckIN account!");
+    
+    document.getElementById("signUpemail").value = "";
+    document.getElementById("signUppass").value = "";
+    document.getElementById("signUpFN").value = "";
+    document.getElementById("signUpLN").value = "";
+    document.getElementById("signUpOrg").value = "";
 }
