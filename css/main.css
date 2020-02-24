@@ -71,6 +71,11 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   font-family: Poppins-Regular, sans-serif;
   font-size: 20px;
+  color: #eaab00;
+  width: 100%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -475,4 +480,11 @@ width: 100%;
     visibility: visible;
     opacity: 1;
   }
+}
+
+iframe {
+  width: 100%;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
