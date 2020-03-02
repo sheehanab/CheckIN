@@ -33,3 +33,15 @@ function storeData() {
         });
 
 }
+
+const list_div = document.querySelector("#event_div");
+
+db.collection("Events").get().then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+
+        list_div.innerHTML += "<div><h3>" + doc.data().Name + "</h3><p>Location: " + doc.data().Location + "</p><p>Time: " + doc.data().Time + "</p></div><br>"
+        console.log(doc.id, " => ", doc.data());
+    });
+});
+
+
